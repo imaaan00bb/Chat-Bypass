@@ -1,0 +1,188 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Frame = Instance.new("Frame")
+local LeftSide = Instance.new("Frame")
+local Middle = Instance.new("Frame")
+local TopRightCorner = Instance.new("ImageLabel")
+local TopLeftCorner = Instance.new("ImageLabel")
+local BottomLeftCorner = Instance.new("ImageLabel")
+local BottomRightCorner = Instance.new("ImageLabel")
+local RightSide = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local Sides = Instance.new("Folder")
+local LeftSide_2 = Instance.new("Frame")
+local Middle_2 = Instance.new("Frame")
+local TopRightCorner_2 = Instance.new("ImageLabel")
+local TopLeftCorner_2 = Instance.new("ImageLabel")
+local BottomLeftCorner_2 = Instance.new("ImageLabel")
+local BottomRightCorner_2 = Instance.new("ImageLabel")
+local RightSide_2 = Instance.new("Frame")
+
+--Properties:
+
+Frame.Parent = game.StarterGui.ScreenGui
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.432051301, 0, 0.357419342, 0)
+Frame.Size = UDim2.new(0.142307729, 0, 0.388387084, 0)
+Frame.ZIndex = 2
+
+LeftSide.Name = "LeftSide"
+LeftSide.Parent = Frame
+LeftSide.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LeftSide.BorderSizePixel = 0
+LeftSide.Position = UDim2.new(0, 579, 0, 187)
+LeftSide.Size = UDim2.new(0, 8, 1, -16)
+
+Middle.Name = "Middle"
+Middle.Parent = Frame
+Middle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Middle.BorderSizePixel = 0
+Middle.Position = UDim2.new(0, 587, 0, 179)
+Middle.Size = UDim2.new(1, -16, 1, 0)
+
+TopRightCorner.Name = "TopRightCorner"
+TopRightCorner.Parent = Frame
+TopRightCorner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopRightCorner.BackgroundTransparency = 1.000
+TopRightCorner.BorderSizePixel = 0
+TopRightCorner.Position = UDim2.new(3.89789748, -8, 0.594684362, 0)
+TopRightCorner.Size = UDim2.new(0, 8, 0, 8)
+TopRightCorner.Image = "rbxassetid://424137621"
+TopRightCorner.ImageColor3 = Color3.fromRGB(50, 50, 50)
+TopRightCorner.ImageRectOffset = Vector2.new(180, 0)
+TopRightCorner.ImageRectSize = Vector2.new(40, 40)
+
+TopLeftCorner.Name = "TopLeftCorner"
+TopLeftCorner.Parent = Frame
+TopLeftCorner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopLeftCorner.BackgroundTransparency = 1.000
+TopLeftCorner.BorderSizePixel = 0
+TopLeftCorner.Position = UDim2.new(2.89789748, 0, 0.594684362, 0)
+TopLeftCorner.Size = UDim2.new(0, 8, 0, 8)
+TopLeftCorner.Image = "rbxassetid://424137621"
+TopLeftCorner.ImageColor3 = Color3.fromRGB(50, 50, 50)
+TopLeftCorner.ImageRectSize = Vector2.new(40, 40)
+
+BottomLeftCorner.Name = "BottomLeftCorner"
+BottomLeftCorner.Parent = Frame
+BottomLeftCorner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BottomLeftCorner.BackgroundTransparency = 1.000
+BottomLeftCorner.BorderSizePixel = 0
+BottomLeftCorner.Position = UDim2.new(2.89789748, 0, 1.59468436, -8)
+BottomLeftCorner.Size = UDim2.new(0, 8, 0, 8)
+BottomLeftCorner.Image = "rbxassetid://424137621"
+BottomLeftCorner.ImageColor3 = Color3.fromRGB(50, 50, 50)
+BottomLeftCorner.ImageRectOffset = Vector2.new(0, 180)
+BottomLeftCorner.ImageRectSize = Vector2.new(40, 40)
+
+BottomRightCorner.Name = "BottomRightCorner"
+BottomRightCorner.Parent = Frame
+BottomRightCorner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BottomRightCorner.BackgroundTransparency = 1.000
+BottomRightCorner.BorderSizePixel = 0
+BottomRightCorner.Position = UDim2.new(3.89789748, -8, 1.59468436, -8)
+BottomRightCorner.Size = UDim2.new(0, 8, 0, 8)
+BottomRightCorner.Image = "rbxassetid://424137621"
+BottomRightCorner.ImageColor3 = Color3.fromRGB(50, 50, 50)
+BottomRightCorner.ImageRectOffset = Vector2.new(180, 180)
+BottomRightCorner.ImageRectSize = Vector2.new(40, 40)
+
+RightSide.Name = "RightSide"
+RightSide.Parent = Frame
+RightSide.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RightSide.BorderSizePixel = 0
+RightSide.Position = UDim2.new(3.89789748, -8, 0.594684362, 8)
+RightSide.Size = UDim2.new(0, 8, 1, -16)
+
+TextButton.Parent = Frame
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(2.89749551, 0, 0.738870382, 0)
+TextButton.Size = UDim2.new(1.00040221, 0, 0.116943538, 0)
+TextButton.ZIndex = 2
+TextButton.Text = "press me to load chat bypasser!"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.MouseButton1Down:connect(function()
+	TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imaaan00bb/Chat-Bypass/main/chatbypass4script"))()
+end)
+
+Sides.Name = "Sides"
+Sides.Parent = TextButton
+
+LeftSide_2.Name = "LeftSide"
+LeftSide_2.Parent = Sides
+LeftSide_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LeftSide_2.BackgroundTransparency = 1.000
+LeftSide_2.BorderSizePixel = 0
+LeftSide_2.Position = UDim2.new(0, 0, 0, 8)
+LeftSide_2.Size = UDim2.new(0, 8, 1, -16)
+
+Middle_2.Name = "Middle"
+Middle_2.Parent = Sides
+Middle_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Middle_2.BackgroundTransparency = 1.000
+Middle_2.BorderSizePixel = 0
+Middle_2.Position = UDim2.new(0, 8, 0, 0)
+Middle_2.Size = UDim2.new(1, -16, 1, 0)
+
+TopRightCorner_2.Name = "TopRightCorner"
+TopRightCorner_2.Parent = Sides
+TopRightCorner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopRightCorner_2.BackgroundTransparency = 1.000
+TopRightCorner_2.BorderSizePixel = 0
+TopRightCorner_2.Position = UDim2.new(1, -8, 0, 0)
+TopRightCorner_2.Size = UDim2.new(0, 8, 0, 8)
+TopRightCorner_2.Image = "rbxassetid://424137621"
+TopRightCorner_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+TopRightCorner_2.ImageRectOffset = Vector2.new(180, 0)
+TopRightCorner_2.ImageRectSize = Vector2.new(40, 40)
+TopRightCorner_2.ImageTransparency = 1.000
+
+TopLeftCorner_2.Name = "TopLeftCorner"
+TopLeftCorner_2.Parent = Sides
+TopLeftCorner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopLeftCorner_2.BackgroundTransparency = 1.000
+TopLeftCorner_2.BorderSizePixel = 0
+TopLeftCorner_2.Size = UDim2.new(0, 8, 0, 8)
+TopLeftCorner_2.Image = "rbxassetid://424137621"
+TopLeftCorner_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+TopLeftCorner_2.ImageRectSize = Vector2.new(40, 40)
+TopLeftCorner_2.ImageTransparency = 1.000
+
+BottomLeftCorner_2.Name = "BottomLeftCorner"
+BottomLeftCorner_2.Parent = Sides
+BottomLeftCorner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BottomLeftCorner_2.BackgroundTransparency = 1.000
+BottomLeftCorner_2.BorderSizePixel = 0
+BottomLeftCorner_2.Position = UDim2.new(0, 0, 1, -8)
+BottomLeftCorner_2.Size = UDim2.new(0, 8, 0, 8)
+BottomLeftCorner_2.Image = "rbxassetid://424137621"
+BottomLeftCorner_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+BottomLeftCorner_2.ImageRectOffset = Vector2.new(0, 180)
+BottomLeftCorner_2.ImageRectSize = Vector2.new(40, 40)
+BottomLeftCorner_2.ImageTransparency = 1.000
+
+BottomRightCorner_2.Name = "BottomRightCorner"
+BottomRightCorner_2.Parent = Sides
+BottomRightCorner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BottomRightCorner_2.BackgroundTransparency = 1.000
+BottomRightCorner_2.BorderSizePixel = 0
+BottomRightCorner_2.Position = UDim2.new(1, -8, 1, -8)
+BottomRightCorner_2.Size = UDim2.new(0, 8, 0, 8)
+BottomRightCorner_2.Image = "rbxassetid://424137621"
+BottomRightCorner_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+BottomRightCorner_2.ImageRectOffset = Vector2.new(180, 180)
+BottomRightCorner_2.ImageRectSize = Vector2.new(40, 40)
+BottomRightCorner_2.ImageTransparency = 1.000
+
+RightSide_2.Name = "RightSide"
+RightSide_2.Parent = Sides
+RightSide_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RightSide_2.BackgroundTransparency = 1.000
+RightSide_2.BorderSizePixel = 0
+RightSide_2.Position = UDim2.new(1, -8, 0, 8)
+RightSide_2.Size = UDim2.new(0, 8, 1, -16)
